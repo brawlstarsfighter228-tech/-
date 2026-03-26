@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренажер Английских Слов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Тренажер для изучения английских слов</h1>
+
+        <div id="setup-section">
+            <h2>Шаг 1: Настройка</h2>
+            <label for="word-count">Сколько слов вы хотите выучить?</label>
+            <input type="number" id="word-count" min="1" value="5">
+            <button id="start-btn">Начать</button>
+        </div>
+
+        <div id="input-section" class="hidden">
+            <h2>Шаг 2: Введите ваши слова</h2>
+            <div id="word-inputs"></div>
+            <button id="start-quiz-btn">Начать тест</button>
+        </div>
+
+        <div id="quiz-section" class="hidden">
+            <h2>Шаг 3: Тест</h2>
+            <p id="russian-word-display"></p>
+            <input type="text" id="english-input" placeholder="Введите слово на английском">
+            <button id="check-answer-btn">Проверить</button>
+            <p id="feedback"></p>
+        </div>
+
+        <div id="result-section" class="hidden">
+            <h2>Результаты</h2>
+            <p id="score-display"></p>
+            <button id="restart-btn">Начать заново</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
